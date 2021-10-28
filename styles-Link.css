@@ -1,0 +1,449 @@
+/* ----------共通---------- */
+body {
+  background: #d2d2d2;
+  line-height: 2;
+  font-size: 15px;
+  color:#666;
+  margin: 0px;
+  padding: 0px;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.main {
+  float: left;
+  width: 70%;
+}
+
+main p {
+  margin-left: 20px;
+}
+
+.side {
+  float: right;
+  width: 24%;
+}
+
+.contents {
+  padding:24px;
+}
+
+.container {
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.h-title {
+  height: 100px;
+  border-top: 5px solid blue;
+  position: relative;
+}
+
+.h-title .h-logo {
+  width: 300px;
+  position: absolute;
+  top:50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+/* ----------共通---------- */
+
+/* ----------ナビバー---------- */
+.h-nav {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.h-menu {
+  letter-spacing: -.4em;
+  margin:0;
+}
+
+.h-list {
+  display: inline-block;
+  width: calc(100%/6);
+  position: relative;
+  letter-spacing: normal;
+  height: 64px;
+  border-right: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+
+.h-l-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.h-l-top {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.h-l-bottom {
+  font-size: 10px;
+  color: #bababa;
+  text-align: center;
+}
+
+.h-list:hover .h-l-top {
+  color:#0e36ca;
+}
+
+.h-list:hover {
+  background-color: #e6ebfa;
+}
+
+.h-list:hover .h-l-box::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+}
+/* ----------ナビバー---------- */
+
+/* ----------ナビバーアクティブ---------- */
+.active {
+  background-color: #e6ebfa;
+}
+
+.active .h-l-top::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+} 
+
+.active .h-l-top {
+  color:#0e36ca;
+}
+/* ----------ナビバーアクティブ---------- */
+
+
+/* ----------ヘッダー画像---------- */
+.h-img {
+  max-width: 100%;
+  height: auto;
+}
+/* ----------ヘッダー画像---------- */
+
+
+/* section 1 */
+h1 {
+  background:#0f3bda;
+  color: white;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 24px;
+  /* font-weight:normal; */
+}
+
+h1::first-letter {
+  border-left: 3px solid #8e9eef;
+  padding-left: 16px;
+}
+
+.m-section {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.m-info {
+  margin-left: 20px;
+}
+
+.m-info-date {
+  float: left;
+  padding: 8px 32px 8px 0;
+  color: blue;
+}
+
+.m-info-content {
+  padding: 8px;
+  padding-left: 9em;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+}
+
+span.new {
+  background: red;
+  font-size:11px;
+  color: white;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.m-log {
+  text-align: right;
+  padding-top:24px;
+}
+
+.m-log a {
+  color: #666;
+}
+
+.h2-red {
+  color: red;
+  font-weight: bold;
+}
+
+h2 {
+  border-radius: 5px;
+  color: rgb(102,102,102);
+  border:1px solid gray;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: normal;
+  background:linear-gradient(to bottom,white, rgb(238, 238, 238));
+}
+
+h2.red {
+  color: red;
+}
+
+span.new {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 7px;
+}
+
+/* ----------フッター---------- */
+.footer {
+  color: white;
+  background-color:rgb(16,60,227);
+  text-align: center;
+  clear: both;
+  font-size: 13px;
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(16,60,227);
+  transition: 0.5s;
+} 
+/* ----------フッター---------- */
+
+
+/* ----------サイドバー---------- */
+.side {
+  float: right;
+}
+
+.s-framebox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.s-h3 {
+  padding: 20px 10px;
+  border-top: 5px solid blue;
+  background: #eee;
+  border-bottom:1px solid #d2d2d2 ;
+}
+
+.s-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.s-list {
+  border-bottom: 1px solid #d2d2d2;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.s-list a {
+  text-decoration: none;
+}
+
+.s-list:hover {
+  background: white;
+}
+
+.s-list a:visited{
+  color:#666;
+}
+
+.s-list:hover a{
+  color: blue;
+}
+
+.s-box {
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.s-img {
+ float: left;
+ width: 20%;
+  margin-right: 5px;
+}
+
+.s-l-title {
+  color:blue;
+  font-size: 11px;
+}
+
+.s-l-description {
+  font-size: 11px;
+}
+
+.s-company-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.s-company-info {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5;
+}
+/* ----------サイドバー---------- */
+
+
+/* ----------サービス----------- */
+.sv-list-img {
+  float: left;
+  width: 25%;
+  margin: 15px 10px 15px 15px;
+}
+
+.sv-list {
+  border: 1px solid #ccc;
+  margin-bottom: 60px;
+  background:linear-gradient(to bottom,white, rgb(238, 238, 238));
+  overflow: hidden;
+  box-shadow: 0 3px 6px  rgb(238, 238, 238);
+}
+
+.sv-list-nl {
+  border: 1px solid #ccc;
+  margin-bottom: 60px;
+  background:linear-gradient(to bottom,white, rgb(238, 238, 238));
+  overflow: hidden;
+  box-shadow: 0 3px 6px  rgb(238, 238, 238);
+}
+
+h4 {
+  color: #0f3bda;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
+.sv-list a {
+  text-decoration: none;
+}
+
+.sv-list:hover {
+  color: #0f3bda;
+  background: white;
+  transition: 0.5s;
+}
+
+.sv-list a:visited {
+  color: #666;
+}
+
+.sv-list a:hover {
+  color: #0f3bda;
+  text-decoration: none;
+}
+/* ----------サービス----------- */
+
+/* ----------リクルート----------- */
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+th {
+  width: 25%;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+td a {
+  color: #666;
+}
+
+span.red {
+  color: red;
+}
+
+span.gray {
+  background: #bababa;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+p a {
+  color:#666;
+}
+
+.r-table-h {
+  text-align: left;
+}
+
+.r-table {
+  margin-bottom: 30px;
+}
+
+/* ----------リクルート----------- */
+
+/* ----------リンク----------- */
+.l-table-h {
+  font-weight: normal;
+  text-align: left;
+}
+
+.l-table a {
+  color: #666;
+}
+
+.l-table a:hover {
+  text-decoration: none;
+  color:blue;
+  transition: 0.5s;
+  
+}
+
+/* ----------リンク----------- */
+

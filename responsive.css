@@ -1,0 +1,87 @@
+/* スマホ対応 */
+@media screen and (max-width: 800px) {  
+  body {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .h-nav {
+    display: none;
+  }
+
+  .main {
+    float: none;
+    width: auto;
+    margin-bottom: 200px;
+  }
+
+  /* .h-title .h-logo {
+    width: 60%;
+  } */
+
+  h1, h2 {
+    font-size: 16px;
+    padding: 7px 6px 7px 8px;
+  }
+
+  h1::first-letter {
+    padding-left: 8px;
+  }
+
+  .m-info-date {
+    font-size: 8px;
+  }
+
+  .m-info-content {
+    /* font-size: 8px; */
+    line-height: 1.5;
+  }
+
+  .side {
+    float: none;
+    width: auto;
+  }
+
+ .responsive {
+    display: none;
+ }
+
+ .container {
+  width: 100vw;
+}
+
+ .contents {
+   padding:2%;
+ }
+
+ .sp-menu {
+  /* display: none; */
+}
+
+}
+
+/* スマホ以上 */
+@media screen and (min-width: 801px) {
+  .container {
+    width: 100vw;
+  }
+
+  .h-hidden-menu {
+    display: none;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+}
+  
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .h-hidden-menu {
+    display: none;
+  }  
+ }
+
